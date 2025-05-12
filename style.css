@@ -1,0 +1,89 @@
+.langselect {
+    z-index: 2;
+
+}
+.globebtn {
+    padding: 0.5rem;
+    display: flex;
+    position: fixed;
+    right:0.1rem; 
+    top: 0.1rem;
+    z-index: 3;
+}
+
+.closeglobebtn {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: end;
+    right:0.1rem; 
+    top: 0.1rem;
+}
+
+.modal-dialog {
+    position: absolute !important;
+    right: 0.4rem;
+    margin-top: 0px;
+}
+
+.modal {
+--bs-modal-margin : 0.1rem !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: contents;
+}
+
+.home {
+    height: 100vh;
+}
+
+.sun {
+    position: relative;
+    top: 20vh;
+    padding: 10%;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto !important;
+}
+
+.bg-wrapper {
+ background-color: rgb(256,244,236);
+}
+
+a{
+    color:darkred !important;  
+    text-decoration: none;
+}
+
+.tract-content {
+    padding:1rem;
+}
+
+h1 {
+    font-size: 25px !important;
+    font-weight: bold !important;
+}
+
+.tract-section {
+padding: 0 0 2rem;
+}
+
+.lang-link {
+    text-decoration: none;
+    color: black !important;  
+}
+
+.church-finder {
+    padding: 0 0 2rem;
+
+}
+
+.btn {
+    display: block !important;
+}
+

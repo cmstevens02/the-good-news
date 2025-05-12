@@ -1,0 +1,203 @@
+<!DOCTYPE html lang='en'>
+<html>
+
+<head>
+    <title>Las Buenas Noticias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src='https://www.blueletterbible.org/assets/scripts/blbToolTip/BLB_ScriptTagger-min.js'
+        type='text/javascript'></script>
+    <script type='text/javascript'>
+        BLB.Tagger.Translation = 'RVR60';
+        BLB.Tagger.HyperLinks = 'all'; // 'all', 'none', 'hover'
+        BLB.Tagger.HideTanslationAbbrev = false;
+        BLB.Tagger.TargetNewWindow = true;
+        BLB.Tagger.Style = 'par'; // 'line' or 'par'
+        BLB.Tagger.NoSearchTagNames = ''; // HTML element list
+        BLB.Tagger.NoSearchClassNames = 'noTag doNotTag'; // CSS class list
+    </script>
+
+</head>
+
+
+<body>
+    <div class="langselect">
+        <!-- Globe Button for Modal -->
+        <div class="globebtn">
+            <button type="button" class="btn border rounded-circle text-center bg-white p-1" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-globe"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+            </button>
+        </div>
+
+
+        <!--Actual Modal Code-->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="closeglobebtn">
+                        <button type="button" class="btn border rounded-circle text-center bg-white p-1"
+                            data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <li><button class="btn"><a class="lang-link" href="/"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x,
+                                    https://flagcdn.com/72x54/us.png 3x" width="24" height="18" alt="United States">
+                                          English</a></button>
+                                  </li>
+                                  <li><button disabled class="btn"><a class="lang-link" href="/es"><img
+                                                  src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x,
+                              https://flagcdn.com/72x54/es.png 3x" width="24" height="18" alt="Spain"> Español</a>
+                                      </button>
+                                  </li>
+                                  <li><button class="btn"><a class="lang-link" href="/it"><img
+                                                  src="https://flagcdn.com/24x18/it.png" srcset="https://flagcdn.com/48x36/it.png 2x,
+                  https://flagcdn.com/72x54/it.png 3x" width="24" height="18" alt="Italy"> Italiano</a>
+                                      </button>
+                                  </li>
+                                  <li><button class="btn"><a class="lang-link" href="/pt"><img
+                                                  src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x,
+      https://flagcdn.com/72x54/pt.png 3x" width="24" height="18" alt="Portugal"> Português</a>
+                                      </button>
+                                  </li>
+                                  <li><button class="btn"><a class="lang-link" href="/jp"><img
+                                      src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x,
+  https://flagcdn.com/72x54/jp.png 3x" width="24" height="18" alt="Portugal"> 日本語</a>
+                          </button>
+                      </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-wrapper">
+
+
+        <div class="content">
+            <div class="home">
+                <div class="sun">
+                    <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 270.57 268.89">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    font-size: 30px;
+                                }
+
+                                .cls-1,
+                                .cls-2 {
+                                    font-weight: 800;
+                                }
+
+                                .cls-1,
+                                .cls-2,
+                                .cls-3 {
+                                    fill: #1a1a1a;
+                                }
+
+                                .cls-2 {
+                                    font-size: 23.78px;
+                                }
+
+                                .cls-4 {
+                                    fill: #fff;
+                                }
+
+                                .cls-3 {
+
+                                    font-size: 10.1px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_1-2">
+                            <ellipse class="cls-4" cx="135" cy="135" rx="135" ry="135" /><text class="cls-2"
+                                transform="translate(55 100)">
+                                <tspan x="0" y="0">Las</tspan>
+                            </text><text class="cls-1" transform="translate(25 125.79)">
+                                <tspan x="0" y="0">Buenas Noticias</tspan>
+                            </text><text class="cls-3" transform="translate(40 140.05)">
+                                <tspan x="0" y="0">Hay más para esta vida de lo que piensas.</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="tract-content">
+                <div class="tract-section">
+                    <h1>Dios nos creó para estar con Él.</h1>
+                    <p>Como humanos, somos personas relacionales, así es como Dios nos hizo. Nos creó a Su imagen y nos puso en la tierra para glorificarlo y disfrutar de Su presencia.</p>
+                    <p>Génesis 1-2; Levítico 26:12; Juan 15:1-17</p>
+                </div>
+
+                <div class="tract-section">
+                    <h1>Nuestros pecados nos separan de Dios.</h1>
+                    <p>Dios es santo y perfecto, nosotros no. Todos hemos escogido pecar (el pecado es cualquier manera en que hemos desobedecido y violado la ley de Dios). Debido a que hemos pecado contra nuestro santo y perfecto Dios, nuestra relación con Él está quebrada y somos merecedores del castigo. La paga del pecado es la muerte y separación de Dios en esta vida, y por toda la eternidad, en el infierno.
+                    </p>
+                    <p>Isaías 59:2; Romanos 3:23, 6:23; 2 Tesalonicenses 1:8-9; Gálatas 3:10</p>
+                </div>
+                <div class="tract-section">
+                    <h1>Nuestros pecados no pueden ser removidos por buenas obras.</h1>
+                    <p>No existe ninguna cantidad de buenas obras para compensar todos nuestros pecados. Es como usar un parche de tela para cubrir una mancha en una camiseta. Debajo del parche de tela, la mancha permanece. No podemos realizar buenas obras para obtener el perdón de Dios, de la misma manera que un juez justo no perdonará un robo solo porque el delincuente donó dinero a una obra de caridad. Dios es un Juez santo y perfecto que demanda justicia santa y perfecta por nuestros pecados. Tal y como un juez condena delitos, Dios tiene que castigarnos por nuestros pecados. El castigo del pecado es la muerte y la separación eterna de Él.</p>
+                    <p>Isaías 64:6; Romanos 3:20; Efesios 2:8-9; Génesis 18:25; Proverbios 17:15</p>
+                </div>
+                <div class="tract-section">
+                    <h1>Jesús murió y resucitó para pagar el precio por nuestros pecados.</h1>
+                    <p>Aunque Dios es santo y justo, también es amoroso y misericordioso. Por lo tanto, ha provisto una manera para que nosotros seamos reconciliados con Él. Dios envió a su Hijo, Jesús de Nazaret, a morar entre la humanidad, a nuestro favor. Jesús vivió una vida perfecta y sin pecado. Aun así, tomó el castigo por nuestros pecados y murió en nuestro lugar. A través de su muerte en la cruz, Jesús pagó el precio por nuestros pecados y recibió la ira de Dios en nuestro lugar. Su muerte satisfizo la demanda de justicia de Dios, y su vida perfecta, la demanda de santidad. Tres días después, resucitó de la muerte, demostrando que todo lo que dijo e hizo fue verdad. Que solo Él tiene el poder sobre el pecado y la muerte.</p>
+                    <p>Lucas 24:46-47; Romanos 5:8, 6:23; 1 Corintios 15:3-8</p>
+                </div>
+                <div class="tract-section">
+                    <h1>Todo el que ponga su confianza en Él, tendrá vida eterna.</h1>
+                    <p>Todo aquel que se arrepiente de su pecado y pone su fe en Jesús, confiando que el sacrificio que Él hizo en la cruz es suficiente para perdonar su pecado, recibirá el regalo de la vida eterna. Este regalo no es obtenido por nuestras buenas obras, si no por la gracia de Dios. Si confiesas con tu boca que Jesús es el Señor y crees en tu corazón que Dios le levantó de entre los muertos, serás salvo. Al que cree, sus pecados le son perdonados.</p>
+                    <p>Romanos 6:23, 10:9-10; Juan 3:16-18; Efesios 2:8-9; Colosenses 2:13-14</p>
+                </div>
+                <div class="tract-section">
+                    <h1>La vida con Jesús empieza ahora y permanece para siempre..</h1>
+                    <p>En el momento que confiamos en Jesús, entramos en una relación inquebrantable con Dios que comienza inmediatamente y perdura por la eternidad. Milagrosamente, Dios nos regala su Espíritu para que tengamos poder sobre el pecado y vivamos una vida de santidad y devoción a Dios.</p>
+                    <p>Juan 10:10, 28; Efesios 1:13-14; 2 Timoteo 1:7-10; Romanos 8</p>
+                </div>
+                
+                <div class="tract-section">
+                    <h1>Como responder:</h1>
+                    <p>Si crees en este mensaje y quieres poner tu fe en Jesús, lo primero que puedes hacer es orar, reconociendo las seis verdades que encontraste en este folleto. La Biblia nos enseña que somos capaces de orar y hablar con Dios tal y como lo hacemos con un amigo o un padre. (Mateo 6:9-13, 11:28-30; y 1 Pedro 5:6-7)</p>
+                    <p>Reconoce y arrepiéntete de tu pecado ante Dios. El arrepentimiento es simplemente rechazar nuestra propia senda, girar 180 grados, y seguir a Dios. No solo nos arrepentimos con nuestras palabras, sino también a través de nuestras acciones. El reconocimiento genuino y el arrepentimiento de tu pecado te llevarán a un dolor genuino y odio por tu pecado. ¡Reconoce tu necesidad de un Salvador y cree que Jesús murió y resucitó de la muerte, para ofrecerte perdón por tu pecado y ahora es tu Señor!</p>
+                    <p>¡Agradécele a Dios por su perdón! El arrepentimiento y la salvación genuina nos trae alegría y un deseo por seguir a Jesús incondicionalmente. Jesús debe ser nuestro Salvador y Señor. No podemos anhelar su perdón y rechazarlo como el Señor de nuestras vidas. Dios nos llama a rechazar nuestra vida de pecado y egoísmo para vivir para Él. La Biblia dice que entonces somos una nueva creación; antes de creer en Jesús estábamos muertos, ¡pero ahora tenemos vida!</p>
+                    <p>Los próximos pasos son formar parte de una iglesia que predique a Cristo y las enseñanzas de la Biblia. Es importante separar tiempo cada día para enfocarse en Dios a través de la oración y la lectura de su Palabra, formando relaciones con personas que puedan ser de ayuda en tu camino con Dios. Si tienes alguna pregunta o deseas saber más, conversa con la persona que te entregó este folleto.</p>
+                </div>
+
+                <div class="church-finder text-center">
+                    <a href="https://www.9marks.org/church-search/"> Find a church near you!</a>
+                </div>
+                <img src="/public/Oasis.svg" />
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
